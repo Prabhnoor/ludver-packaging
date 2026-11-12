@@ -1,3 +1,4 @@
 window.LUDVER_SITE = Object.freeze({
-  enquiryAddress: "Prabhnoor@northamltd.com"
+  enquiryAddress: "prabhnoor@northamltd.com",
+  enquirySubject: "[LUDVER] Custom Packaging Inquiry"
 });

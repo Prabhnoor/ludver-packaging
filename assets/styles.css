@@ -28,10 +28,11 @@ h1,h2,h3,p{margin-top:0}
 h1{font-size:clamp(58px,5.25vw,78px);line-height:.99;font-weight:500;letter-spacing:-.063em;margin-bottom:26px;position:relative;z-index:1}
 h1 em{font-family:Georgia,'Times New Roman',serif;font-size:.84em;font-weight:400;line-height:1.16;letter-spacing:-.055em;white-space:nowrap}
 .hero-description{font-size:16px;line-height:1.7;max-width:350px;color:var(--muted);margin-bottom:29px}
-.button{display:inline-flex;align-items:center;justify-content:space-between;gap:34px;background:var(--forest);color:var(--ivory);font-size:13px;font-weight:600;min-height:53px;padding:16px 22px;transition:background .18s,transform .18s}
-.button:hover{background:#12523c;transform:translateY(-2px)}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:0;background:var(--forest);color:var(--ivory);font-size:13px;font-weight:600;min-height:53px;padding:16px 22px;transition:background .18s,transform .18s}
+.button:hover{background:#12523c}
 .button span{font-size:20px;line-height:1;font-weight:400}
-.text-link{display:inline-flex;align-items:center;gap:18px;font-size:12px;font-weight:600;line-height:1.6}
+.text-link{display:inline-flex;align-items:center;justify-content:center;gap:0;border:1px solid var(--forest);padding:12px 16px;min-height:44px;font-size:12px;font-weight:600;line-height:1.6;text-align:center;transition:background .18s,color .18s}
+.text-link:hover{background:var(--forest);color:var(--ivory)}
 .text-link span{font-size:18px;font-weight:400;transition:transform .18s}
 .text-link:hover span{transform:translate(2px,-2px)}
 .hero-secondary{display:flex;width:max-content;margin-top:22px;gap:19px;font-size:11px;color:var(--muted)}
@@ -89,3 +90,9 @@ h3{font-size:21px;font-weight:500;letter-spacing:-.035em;line-height:1.15;margin
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
 .gmail-note{font-size:10px;line-height:1.6;color:var(--muted);margin:12px 0 0}.contact-button{min-width:205px}.contact-details .contact-note{margin-top:24px}
+
+/* Text-only navigation and enquiry buttons. */
+.hero-secondary{width:max-content;max-width:100%;margin-top:14px;color:var(--forest)}
+.solution .text-link{gap:0;font-size:11px}
+.header-contact{justify-content:center;min-height:44px}
+@media(max-width:560px){.hero-secondary{display:flex;margin-left:0;margin-top:14px;font-size:11px;width:max-content;max-width:100%}}
